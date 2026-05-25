@@ -97,6 +97,23 @@
 
     .panel-pad { padding: 1.35rem; }
 
+    .hero-image {
+  margin: 1.25rem 0 0;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-image figcaption {
+  margin-top: 0.6rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -284,10 +301,19 @@
         <article class="panel panel-pad" id="summary">
           <div class="eyebrow">Repository</div>
           <h1>[REPOSITORY NAME]</h1>
-          <p class="lede">
-            [One or two sentences describing the repository, its purpose, and how it relates to the wider project.]
-          </p>
-          <div class="badge-row" aria-label="Tags">
+
+<p class="lede">
+  [One or two sentences describing the repository...]
+</p>
+
+<figure class="hero-image">
+  <img src="images/hero/ifpri2-hero-panorama.jpg" alt="IFPRI 2 panoramic montage">
+  <figcaption>
+    IFPRI 2 — panoramic montage of the proposed City of London site.
+  </figcaption>
+</figure>
+
+<div class="badge-row">
             <span class="badge">[Tag 1]</span>
             <span class="badge">[Tag 2]</span>
             <span class="badge">[Tag 3]</span>
